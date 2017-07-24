@@ -1,0 +1,66 @@
+Create Schedule
+1. The Station Manager selects the create schedule option from the main screen.
+2. The system displays the Schedule Screen.
+3. The Station Manager selects schedule details of the program schedule such as program, presenter and producer details.
+4. The schedule screen displays the list of existing programs.
+5. The station manager selects a program from the list.
+6. The schedule screen displays the list of producers/presenter.
+7. The station manager selects a producer/presenter from the list.
+8. The system checks if an annual schedule exists from the list of annual schedule.
+9. If the annual schedule exists, system displays the annual schedule.
+10. Else staion manager creates annual schedule.
+11. The system checks if weeekly schedule exists from the list of weekly schedule.
+12. If the weeekly schedule exists, system displays the weeekly schedule.
+13. Else staion manager creates weekly schedule.
+14. The system checks if an program slot overlaps.
+15. If it overlaps, system rejects the creation of program slot.
+16. Else staion manager creates program slot.
+
+
+The following exceptions have been identified.
+1. No Program Selected: If the station manager does not select a program in point 5 then the use case is terminated.
+2. No Producer/Presenter Selected: If the station manager does not select a producer/presenter in point 7 then the use case is terminated.
+3. Overlaping program slot: This is handled in the standard flow in point 15.
+
+
+Copy Schedule
+1. The Station Manager selects the copy schedule option from the main screen.
+2. The system displays the Schedule Screen.
+3. The system retrieves all annual schedules.
+4. The station manager selects an annual schedule from the list of annual schedule.
+5. The system retrieves all weekly schedules for the selected annual schedule.
+6. The station manager selects a weekly schedule from the list of weeekly schedules.
+7. The system copies the weeekly schedule.
+
+The following exceptions have been identified.
+1. The staion manager does not select annual schedule (in point 4) or weekly schedule (in point 6) then the use case is terminated.
+
+Review /select pp
+1) When the use case is initiated, the  presenter/producer List Screen is displayed ,The Station Manager enters search criteria,List of presenter/Producer or a presenter/producer.
+2) Stational manager retrieves  list of existing presenters and show it in presenter/Producer screen.
+3) Stational manager retrieves list of existing producers and show it in presenter/Producer screen.
+4) Stational manager retrieves presenter data through profile via presenter domain object and see it in presenter/Producer screen
+5) Stational manager retrieves presenter data through photo  via presenter domain object and see it in presenter/Producer screen
+6) Station manager is displayed with presenter data 
+
+
+Modify schedule
+1.The Station Manager selects the Modify schedule option from the Main Screen. 
+2. The station manager tries to modify the annual schedule from the Schedule screen 
+3. The station manager tries to modify the weekly schedule from the Schedule screen 
+4. The station manager tries to modify the Presenter/Producer in the existing schedule from the Schedule screen 
+5. The station manager tries to modify the Program annotation in the existing schedule from the Schedule screen 
+6.Program List screen tries to read the slot from Program slot
+7.Acknowledgement is sent from schedulescreen to the station manager. Ack success(), Ack error(),Ack warning() are the types of ack sent to the station manager.
+
+
+Review select scheduled program
+
+1. When the use case is initiated, the schedule List Screen is displayed ,The Station Manager enters search criteria,List of schedule or a schedule.
+2 Stational manager retrieves annual list of schedule.
+3.Stational manager retrieves scheduled program  list.
+4.Stational manager retrieves weekly list of schedule.
+5. station manager reads program slot from schedule screen.
+6.scheduled program screen reads program slot from schedule screen.
+
+
